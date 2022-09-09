@@ -22,7 +22,7 @@ STEP 1: Run the command <code>conda install -c conda-forge gdal</code><br>
 
 STEP 2: Check the version of the installed GDAL using the command <code>gdalinfo --version</code>. Remember the version.
 
-STEP 2: Go to command prompt and run the following seperately:
+STEP 3: Go to command prompt and run the following seperately:
 <ul>
 <li><code>setx PATH "%PATH%;C:\Program Files (x86)\GDAL"</code></li>
 <li><code>setx PATH "%GDAL_DATA%;C:\Program Files (x86)\GDAL\gdal-data"</code></li>
