@@ -9,7 +9,7 @@ There are three common ways of installing packages inside a conda environment su
 <code>conda install package_name</code><br>
 <code>conda install --channel=conda-forge package_name</code><br>
 <code>pip install package_name</code><br>
-To deactivate the created conda environment use<br>
+To deactivate or get out of the created conda environment use<br>
 <code>conda deactivate</code><br>
 
 <h3>GDAL For Windows (outside conda environment)</h3>
@@ -41,6 +41,11 @@ STEP 3: Go to command prompt and run the following seperately:
 <li><code>setx PATH "%GDAL_VERSION%;insert_gdal_version_here"</code></li>
 </ul>
 The above command is for 32-bit Windows. For 64-Bit, just remove the <code> (x86)</code>. Don't forget to remove the space before (x86).
+
+<h3>GDAL for Linux (inside conda environment)</h3>
+To install gdal, use the command:<br>
+<code>conda install -c conda-forge gdal</code> or<br>
+<code>pip install GDAL</code>
 
 <h3>Rasterio  (inside conda environment)</h3>
 STEP 1: Install GDAL using guide above.<br>
