@@ -3,6 +3,8 @@
 <h3>How to Set Up a Conda Environment?</h3>
 A virtual environment like conda helps us to create isolated spaces to keep the versions of packages of a specific project. To create a conda environment use the command:<br>
 <code>conda create --name your_conda_env_name python=insert_version</code><br>
+For linux, to prepare bash environment for use of command <code>conda activate</code> anywhere, use the following command:<br>
+<code>conda init bash</code><br>
 To activate the created conda environment use<br>
 <code>conda activate your_conda_env_name</code><br>
 There are three common ways of installing packages inside a conda environment such as follows:<br>
@@ -40,10 +42,10 @@ STEP 3: Go to command prompt and run the following seperately:
 <li><code>setx PATH "%GDAL_DRIVER_PATH%;C:\Program Files (x86)\GDAL\gdalplugins"</code></li>
 <li><code>setx PATH "%GDAL_VERSION%;insert_gdal_version_here"</code></li>
 </ul>
-The above command is for 32-bit Windows. For 64-Bit, just remove the <code> (x86)</code>. Don't forget to remove the space before (x86).
+NOTE: The above command is for 32-bit Windows. For 64-Bit, just remove the <code> (x86)</code>. Don't forget to remove the space before (x86).
 
 <h3>GDAL for Linux (inside conda environment)</h3>
-To install gdal, use the command:<br>
+To install gdal, use any of the following commands:<br>
 <code>conda install -c conda-forge gdal</code> or<br>
 <code>pip install GDAL</code>
 
