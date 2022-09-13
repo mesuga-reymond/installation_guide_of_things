@@ -15,9 +15,11 @@ For linux, to prepare bash environment for use of command <code>conda activate</
 To activate the created conda environment use<br>
 <code>conda activate your_conda_env_name</code><br>
 To install a package a package, use any of the following command:<br>
-<code>conda install package_name</code> (From official <a href="https://www.anaconda.com/products/distribution">Anaconda</a> distribution)<br> 
-<code>conda install --channel=conda-forge package_name</code> (From conda-forge channel often contains the latest version of a package)<br>
-<code>pip install package_name</code> (From <a>PyPI</a>, a package repository of open-source Python libraries. To make use of <coda>pip</code> commands inside conda use <code>conda install pip</code>)<br>
+<ul>
+<li><code>conda install package_name</code> (From official <a href="https://www.anaconda.com/products/distribution">Anaconda</a> distribution)</li> 
+<li><code>conda install --channel=conda-forge package_name</code> (From conda-forge channel often contains the latest version of a package)</li>
+<li><code>pip install package_name</code> (From <a>PyPI</a>, a package repository of open-source Python libraries. To make use of <coda>pip</code> commands inside conda use <code>conda install pip</code>)</li>
+</ul>
 To deactivate or get out of the created conda environment use<br>
 <code>conda deactivate</code><br>
 
