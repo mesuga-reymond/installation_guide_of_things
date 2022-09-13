@@ -1,8 +1,11 @@
 # Installation Guide of Things
 Contents<br>
-[How to Set Up a Conda Environment](#How-to-Set-Up-a-Conda-Environment)<br>
-[GDAL For Windows (outside conda environment)](GDAL-For-Windows-outside-conda-environment)<br>
-[GDAL For Windows (inside conda environment)](GDAL-For-Windows-inside-conda-environment)
+1. [How to Set Up a Conda Environment](#How-to-Set-Up-a-Conda-Environment)<br>
+2. [GDAL For Windows (outside conda environment)](#GDAL-For-Windows-outside-conda-environment)<br>
+3. [GDAL For Windows (inside conda environment)](#GDAL-For-Windows-inside-conda-environment)<br>
+4. [GDAL for Linux (inside conda environment)](#GDAL-for-Linux-inside-conda-environment)<br>
+5. [Rasterio (inside conda environment)](#Rasterio-inside-conda-environment)
+
 
 <h3>How to Set Up a Conda Environment?<a name="How-to-Set-Up-a-Conda-Environment"></a></h3>
 A virtual environment like conda helps us to create isolated spaces to keep the versions of packages of a specific project. To create a conda environment use the command:<br>
@@ -11,10 +14,10 @@ For linux, to prepare bash environment for use of command <code>conda activate</
 <code>conda init bash</code><br>
 To activate the created conda environment use<br>
 <code>conda activate your_conda_env_name</code><br>
-There are three common ways of installing packages inside a conda environment such as follows:<br>
-<code>conda install package_name</code><br>
-<code>conda install --channel=conda-forge package_name</code><br>
-<code>pip install package_name</code><br>
+To install a package a package, use any of the following command:<br>
+<code>conda install package_name</code> (From official <a href="https://www.anaconda.com/products/distribution">Anaconda</a> distribution)<br> 
+<code>conda install --channel=conda-forge package_name</code> (From conda-forge channel often contains the latest version of a package)<br>
+<code>pip install package_name</code> (From <a>PyPI</a>, a package repository of open-source Python libraries. To make use of <coda>pip</code> commands inside conda use <code>conda install pip</code>)<br>
 To deactivate or get out of the created conda environment use<br>
 <code>conda deactivate</code><br>
 
@@ -48,12 +51,12 @@ STEP 3: Go to command prompt and run the following seperately:
 </ul>
 NOTE: The above command is for 32-bit Windows. For 64-Bit, just remove the <code> (x86)</code>. Don't forget to remove the space before (x86).
 
-<h3>GDAL for Linux (inside conda environment)</h3>
+<h3>GDAL for Linux (inside conda environment)<a name="GDAL-for-Linux-inside-conda-environment"></a></h3>
 To install gdal, use any of the following commands:<br>
 <code>conda install -c conda-forge gdal</code> or<br>
 <code>pip install GDAL</code>
 
-<h3>Rasterio  (inside conda environment)</h3>
+<h3>Rasterio (inside conda environment)<a name="Rasterio-inside-conda-environment"></a></h3>
 STEP 1: Install GDAL using guide above.<br>
 STEP 2: Run the following command individually:
 <ul>
