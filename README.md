@@ -8,6 +8,7 @@ Contents<br>
 
 
 <h3>How to Set Up a Conda Environment?<a name="How-to-Set-Up-a-Conda-Environment"></a></h3>
+<hr>
 A virtual environment like conda helps us to create isolated spaces to keep the versions of packages of a specific project. To create a conda environment use the command:<br>
 <code>conda create --name your_conda_env_name python=insert_version</code><br>
 For linux, to prepare bash environment for use of command <code>conda activate</code> anywhere, use the following command:<br>
@@ -24,6 +25,7 @@ To deactivate or get out of the created conda environment use<br>
 <code>conda deactivate</code><br>
 
 <h3>GDAL For Windows (outside conda environment) <a name="GDAL-For-Windows-outside-conda-environment"></a></h3>
+<hr>
 STEP 1: Go to this <a href="https://www.gisinternals.com/release.php">Link</a> and select the package suited for your architecture. Select the msi installer of GDAL according to the version of python in your environment. Also, choose the insaller with description <code>Installer for the GDAL python bindings (requires to install the GDAL core)</code>.<br>
 
 STEP 2: Install GDAL through the downloaded msi installer.<br>
@@ -40,6 +42,7 @@ STEP 4: Go to command prompt and run the following seperately:
 NOTE: The above commands are for 32-bit Windows. For 64-Bit, just remove the <code> (x86)</code>. Don't forget to remove the space before (x86).
 
 <h3>GDAL For Windows (inside conda environment) <a name="GDAL-For-Windows-inside-conda-environment"></a></h3>
+<hr>
 STEP 1: Run the command <code>conda install -c conda-forge gdal</code><br>
 
 STEP 2: Check the version of the installed GDAL using the command <code>gdalinfo --version</code>. Remember the version.
@@ -54,11 +57,13 @@ STEP 3: Go to command prompt and run the following seperately:
 NOTE: The above command is for 32-bit Windows. For 64-Bit, just remove the <code> (x86)</code>. Don't forget to remove the space before (x86).
 
 <h3>GDAL for Linux (inside conda environment)<a name="GDAL-for-Linux-inside-conda-environment"></a></h3>
+<hr>
 To install gdal, use any of the following commands:<br>
 <code>conda install -c conda-forge gdal</code> or<br>
 <code>pip install GDAL</code>
 
 <h3>Rasterio (inside conda environment)<a name="Rasterio-inside-conda-environment"></a></h3>
+<hr>
 STEP 1: Install GDAL using guide above.<br>
 STEP 2: Run the following command individually:
 <ul>
