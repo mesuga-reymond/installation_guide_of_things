@@ -26,7 +26,7 @@ STEP 4: Go to command prompt and run the following seperately:
 <li><code>setx PATH "%GDAL_DRIVER_PATH%;C:\Program Files (x86)\GDAL\gdalplugins"</code></li>
 <li><code>setx PATH "%GDAL_VERSION%;insert_gdal_version_here"</code></li>
 </ul>
-The above commands are for 32-bit Windows. For 64-Bit, just remove the <code> (x86)</code>. Don't forget to remove the space before (x86).
+NOTE: The above commands are for 32-bit Windows. For 64-Bit, just remove the <code> (x86)</code>. Don't forget to remove the space before (x86).
 
 <h3>GDAL For Windows (inside conda environment)</h3>
 STEP 1: Run the command <code>conda install -c conda-forge gdal</code><br>
